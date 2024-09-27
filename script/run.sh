@@ -39,6 +39,8 @@ CALLDATA=$(cast calldata "run(string)" $TARGET)
 echo "Interactions calldata:"
 echo "$CALLDATA"
 
+echo "forge script script/$SCRIPT_NAME.s.sol:$SCRIPT_NAME --sig $CALLDATA --rpc-url $NETWORK -vv --skip test --ffi"
+
 forge script script/$SCRIPT_NAME.s.sol:$SCRIPT_NAME --sig $CALLDATA --rpc-url $NETWORK -vv --skip test --ffi
 
 # If the confirmation override is set to s or S - then we skip the rest of the script and exit with success

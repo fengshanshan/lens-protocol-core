@@ -250,8 +250,8 @@
   },
   "local": {
     "testnet": true,
-    "chainId": 31337,
-    "network": "local",
+    "chainId": 221122,
+    "network": "http://l2-rpc.scrollsdk",
     "LensProfilesGuardianTimelock": 300,
     "LensHandlesGuardianTimelock": 300,
     "Currencies": [],
@@ -262,15 +262,69 @@
         "reference": []
       },
       "v2": {
-        "follow": [],
-        "act": [],
-        "collect": [],
-        "reference": []
+        "follow": [
+          {
+            "name": "FeeFollowModule",
+            "addy": "0x96C9AA2c0411eC03e4C941a4A867cFC4EFf66bE8"
+          },
+          {
+            "name": "RevertFollowModule",
+            "addy": "0x45AEb0f1C5399A8D972055D57e1446ecE1f11B8C"
+          }
+        ],
+        "act": [
+          {
+            "name": "CollectPublicationAction",
+            "addy": "0xdA208101D190c96C0a9f34Ccb55f69F0C5EF5F93"
+          }
+        ],
+        "collect": [
+          {
+            "name": "SimpleFeeCollectModule",
+            "addy": "0xcb51C006306E499dA0797E4eCA6A421a17AD80Ff"
+          },
+          {
+            "name": "MultirecipientFeeCollectModule",
+            "addy": "0xea09BA6552ad178e7a35A16f81d15eEa1052AC09"
+          }
+        ],
+        "reference": [
+          {
+            "name": "DegreesOfSeparationReferenceModule",
+            "addy": "0x447a073D1908F147b343E6Be00442F881Fc160F2"
+          },
+          {
+            "name": "FollowerOnlyReferenceModule",
+            "addy": "0x7160536d70CCb71452d3d32223fD7657395e60C3"
+          }
+        ]
       }
     },
     "TreasuryFee": 500,
     "ProfileRoyaltyFee": 500,
-    "HandleRoyaltyFee": 500
+    "HandleRoyaltyFee": 500,
+    "ModuleRegistryImpl": "0x7AB0C0db3738604eD6E778a66EA9318aaB9e848a",
+    "ModuleRegistry": "0x5556D5D54356cF34a45835067495278b3e7D96d7",
+    "FollowNFT": "0x1a5085a7F47A33AE389A1f5a2c72d124F7140A9f",
+    "LensHubImpl": "0x3A6c014579583c5D412A9F3914a67C0885dB90c0",
+    "LensHub": "0x02D2c81A4911f41B36d768798257d0B6F812E360",
+    "LensHandlesImpl": "0x5E692a98CE2ae22195cBC4c69Fc7A52FfAF8B270",
+    "LensHandles": "0xEf72F1b1f9818Ac4E1dc498C1A0DCc3945B780C1",
+    "TokenHandleRegistryImpl": "0xb851c97ECDe52E67C06ddd9a4E0f2ac37d1689f3",
+    "TokenHandleRegistry": "0x2BBEA6BF9AEc0a8332d58D0C20c4BA36CFFFad70",
+    "PermissionlessCreator": "0xF7139924030efFD4CA9DDca4bC40D17bbb975d28",
+    "CreditsFaucet": "0x1Ab299f7C8f0D3C74Dc28f22c46f922F959499B3",
+    "ProfileCreationProxy": "0x157E6cc1e6aE795C6010Eea23EA0f19142EC65C1",
+    "CollectNFT": "0xa0d35fBF0F857A5b7fC2A86969e3DC864cb86941",
+    "LitAccessControlImpl": "0xF6ad8bAdc0c620A6C011ce6E8e24e249EC1aecDb",
+    "LitAccessControl": "0xEA12Af2b8738F8dD41b2daEd6a45D22479B5c0d3",
+    "PublicActProxy": "0x0f88295A8a56456559bddB2D8862DBBdcc68Fa3A",
+    "Treasury": "0x18fc6b2a55949859DD23B2fa41C3460dd1b81165",
+    "AnonymousProfileId": "1",
+    "GovernanceContract": "0x843C01BDDa2Eb009B7A25363a9DC0715A93C6966",
+    "GovernanceContractAdmin": "0xe08c580CE82d7b35F698885F0B0c2E8f22c17FE8",
+    "ProxyAdminContract": "0x8b101d4e0A7C38b8e9ACDfe5b4b06189C5CABC38",
+    "ProxyAdminContractAdmin": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199"
   },
   "example": {
     "testnet": true,

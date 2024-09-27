@@ -45,6 +45,9 @@ contract DeployFreshLensV2 is Script, ForkManagement, ArrayHelpers {
 
     bytes32 constant ADMIN_SLOT = bytes32(uint256(keccak256('eip1967.proxy.admin')) - 1);
     string mnemonic;
+    uint256 privateKey;
+    uint256 governancePrivateKey;
+    uint256 proxyAdminPrivateKey;
 
     uint256 internal PROFILE_GUARDIAN_COOLDOWN;
     uint256 internal HANDLE_GUARDIAN_COOLDOWN;
@@ -103,24 +106,45 @@ contract DeployFreshLensV2 is Script, ForkManagement, ArrayHelpers {
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     function loadPrivateKeys() internal {
-        if (isEnvSet('MNEMONIC')) {
-            mnemonic = vm.envString('MNEMONIC');
-        }
+        // if (isEnvSet('MNEMONIC')) {
+        //     mnemonic = vm.envString('MNEMONIC');
+        // }
 
-        if (bytes(mnemonic).length == 0) {
-            revert('Missing mnemonic');
-        }
+        // if (bytes(mnemonic).length == 0) {
+        //     revert('Missing mnemonic');
+        // }
+
+        privateKey = vm.envUint('PRIVATE_KEY');
+        governancePrivateKey = vm.envUint('GOVERNANCE_PRIVATE_KEY');
+        proxyAdminPrivateKey = vm.envUint('PROXY_ADMIN_PRIVATE_KEY');
+
+        deployer.ownerPk = privateKey;
+        deployer.owner = vm.addr(privateKey);
+
+        governance.ownerPk = governancePrivateKey;
+        governance.owner = vm.addr(governancePrivateKey);
+
+        proxyAdmin.ownerPk = proxyAdminPrivateKey;
+        proxyAdmin.owner = vm.addr(proxyAdminPrivateKey);
+
+        treasury.ownerPk = privateKey;
+        treasury.owner = vm.addr(privateKey);
+
+        console.log('\n');
+
+        console.log('Current block:', block.number);
 
         console.log('\n- - - CURRENT BLOCK: ', block.number);
 
-        (deployer.owner, deployer.ownerPk) = deriveRememberKey(mnemonic, 0);
+        //(deployer.owner, deployer.ownerPk) = deriveRememberKey(mnemonic, 0);
         console.log('\n- - - DEPLOYER: %s', deployer.owner);
-        (governance.owner, governance.ownerPk) = deriveRememberKey(mnemonic, 1);
+        //(governance.owner, governance.ownerPk) = deriveRememberKey(mnemonic, 1);
         console.log('\n- - - GOVERNANCE: %s', governance.owner);
-        (proxyAdmin.owner, proxyAdmin.ownerPk) = deriveRememberKey(mnemonic, 2);
+        //(proxyAdmin.owner, proxyAdmin.ownerPk) = deriveRememberKey(mnemonic, 2);
         console.log('\n- - - PROXYADMIN: %s', proxyAdmin.owner);
-        (treasury.owner, treasury.ownerPk) = deriveRememberKey(mnemonic, 3);
+        //(treasury.owner, treasury.ownerPk) = deriveRememberKey(mnemonic, 3);
         console.log('\n- - - TREASURY: %s', treasury.owner);
+
         profileCreator.owner = 0x6C1e1bC39b13f9E0Af9424D76De899203F47755F;
         console.log('\n- - - PROFILE CREATOR: %s', profileCreator.owner);
     }
