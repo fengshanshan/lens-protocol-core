@@ -251,7 +251,7 @@
   "local": {
     "testnet": true,
     "chainId": 221122,
-    "network": "http://l2-rpc.scrollsdk",
+    "network": "https://l2-rpc-xs9qoe4v.nextnext.id",
     "LensProfilesGuardianTimelock": 300,
     "LensHandlesGuardianTimelock": 300,
     "Currencies": [],
@@ -265,30 +265,30 @@
         "follow": [
           {
             "name": "FeeFollowModule",
-            "addy": "0x96C9AA2c0411eC03e4C941a4A867cFC4EFf66bE8"
+            "addy": "0x1EA1f9F383897601cF19bC326AE8445746561A40"
           },
           {
             "name": "RevertFollowModule",
-            "addy": "0x45AEb0f1C5399A8D972055D57e1446ecE1f11B8C"
+            "addy": "0x37829c2664681812A5A4cEb79bEaEdfd63aa2AcB"
           }
         ],
         "act": [
           {
             "name": "CollectPublicationAction",
-            "addy": "0xdA208101D190c96C0a9f34Ccb55f69F0C5EF5F93"
+            "addy": "0x4fe2f19Da969bb7Ee9fa527FfBd7335986F398d4"
           }
         ],
         "collect": [
           {
             "name": "SimpleFeeCollectModule",
-            "addy": "0xcb51C006306E499dA0797E4eCA6A421a17AD80Ff"
+            "addy": "0x2ED841740d48d5ccA4edCB42bEd2237c9CcA8E17"
           },
           {
             "name": "MultirecipientFeeCollectModule",
-            "addy": "0xea09BA6552ad178e7a35A16f81d15eEa1052AC09"
+            "addy": "0xC7ea5118689b54212cAcc2dbfDc35229c367F363"
           }
         ],
-        "reference": [
+        "referenc": [
           {
             "name": "DegreesOfSeparationReferenceModule",
             "addy": "0x447a073D1908F147b343E6Be00442F881Fc160F2"
@@ -297,51 +297,52 @@
             "name": "FollowerOnlyReferenceModule",
             "addy": "0x7160536d70CCb71452d3d32223fD7657395e60C3"
           }
+        ],
+        "reference": [
+          {
+            "name": "DegreesOfSeparationReferenceModule",
+            "addy": "0xaB7d39e6cec05AA9c25e373E8e8b6f7bD5949959"
+          },
+          {
+            "name": "FollowerOnlyReferenceModule",
+            "addy": "0xe76690cbcd32ee36E6A088Bf03d34C93a0770253"
+          }
         ]
       }
     },
     "TreasuryFee": 500,
     "ProfileRoyaltyFee": 500,
     "HandleRoyaltyFee": 500,
-    "ModuleRegistryImpl": "0x7AB0C0db3738604eD6E778a66EA9318aaB9e848a",
-    "ModuleRegistry": "0x5556D5D54356cF34a45835067495278b3e7D96d7",
-    "FollowNFT": "0x1a5085a7F47A33AE389A1f5a2c72d124F7140A9f",
-    "LensHubImpl": "0x3A6c014579583c5D412A9F3914a67C0885dB90c0",
-    "LensHub": "0x02D2c81A4911f41B36d768798257d0B6F812E360",
-    "LensHandlesImpl": "0x5E692a98CE2ae22195cBC4c69Fc7A52FfAF8B270",
-    "LensHandles": "0xEf72F1b1f9818Ac4E1dc498C1A0DCc3945B780C1",
-    "TokenHandleRegistryImpl": "0xb851c97ECDe52E67C06ddd9a4E0f2ac37d1689f3",
-    "TokenHandleRegistry": "0x2BBEA6BF9AEc0a8332d58D0C20c4BA36CFFFad70",
-    "PermissionlessCreator": "0xF7139924030efFD4CA9DDca4bC40D17bbb975d28",
-    "CreditsFaucet": "0x1Ab299f7C8f0D3C74Dc28f22c46f922F959499B3",
-    "ProfileCreationProxy": "0x157E6cc1e6aE795C6010Eea23EA0f19142EC65C1",
-    "CollectNFT": "0xa0d35fBF0F857A5b7fC2A86969e3DC864cb86941",
-    "LitAccessControlImpl": "0xF6ad8bAdc0c620A6C011ce6E8e24e249EC1aecDb",
-    "LitAccessControl": "0xEA12Af2b8738F8dD41b2daEd6a45D22479B5c0d3",
-    "PublicActProxy": "0x0f88295A8a56456559bddB2D8862DBBdcc68Fa3A",
+    "ModuleRegistryImpl": "0xbed68890B05CF6fb6c9c8376797E051a851dE5AE",
+    "ModuleRegistry": "0xB2bdd74fe8d7faD4480721151FcBF43409FF7612",
+    "FollowNFT": "0xfdcbe2dd5C6008985537aB70F4264DbF071df9Bb",
+    "LensHubImpl": "0xD9BA56A46E11a26b52266FA0EE9B8b096182852a",
+    "LensHub": "0xB0e6Eceb2B50249A175e267a2638a7B02ceCA067",
+    "LensHandlesImpl": "0x900fA806Da3d14044b066437640944fec466C3cA",
+    "LensHandles": "0xf35aa72d9E35620540024413CB15Afc314c69CAa",
+    "TokenHandleRegistryImpl": "0xE94544b4D9f11594e7AE7c8D801b4fB1E85f3734",
+    "TokenHandleRegistry": "0x57419A5b5C5D242e4B716E4E18dfb9743D673178",
+    "PermissionlessCreator": "0xE825bB6280Bd80FdB7C13db3153066c0c1be9998",
+    "CreditsFaucet": "0x6Ff3CB082bf1E97f6b79103D86305b7A1Cb242a0",
+    "ProfileCreationProxy": "0xB81E6917Da42dF21a7Cd9Cef7B673a1Ecb2896aB",
+    "CollectNFT": "0xA4279A9AD1F71500e8a65D65d00Fcb85d48669C6",
+    "LitAccessControlImpl": "0xBe441f120e0FA2e3178beEb76a68Ccf6FbBa2139",
+    "LitAccessControl": "0x81B19ABA9622eFCDED21CC80348f2058DCBba245",
+    "PublicActProxy": "0x99f5bF332afaA080d4b4570c5A9B30360C1E392b",
     "Treasury": "0x18fc6b2a55949859DD23B2fa41C3460dd1b81165",
     "AnonymousProfileId": "1",
-    "GovernanceContract": "0x843C01BDDa2Eb009B7A25363a9DC0715A93C6966",
+    "GovernanceContract": "0xB77F5bdE49f41aA3b38946b249185FFc8F538d3c",
     "GovernanceContractAdmin": "0xe08c580CE82d7b35F698885F0B0c2E8f22c17FE8",
-    "ProxyAdminContract": "0x8b101d4e0A7C38b8e9ACDfe5b4b06189C5CABC38",
-    "ProxyAdminContractAdmin": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199"
+    "ProxyAdminContract": "0x1431c41a1990E1e1f70f2A4dA3Fad0F2340aD141",
+    "ProxyAdminContractAdmin": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0"
   },
-  "example": {
+  "sepolia": {
     "testnet": true,
-    "chainId": 69,
-    "network": "example",
+    "chainId": 11155111,
+    "network": "https://eth-sepolia.g.alchemy.com/v2/jHXQcLUXcl8dF1kkt3azfvgD3kMt3Wke",
     "LensProfilesGuardianTimelock": 300,
     "LensHandlesGuardianTimelock": 300,
-    "Currencies": [
-      {
-        "symbol": "EXAMPLE",
-        "addy": "0x0000000000000000000000000000000000000006"
-      },
-      {
-        "symbol": "BITCOIN",
-        "addy": "0x0000000000000000000000000000000000000009"
-      }
-    ],
+    "Currencies": [],
     "Modules": {
       "v1": {
         "collect": [],
@@ -349,13 +350,146 @@
         "reference": []
       },
       "v2": {
-        "follow": [],
-        "act": [],
-        "collect": [],
-        "reference": []
+        "follow": [
+          {
+            "name": "FeeFollowModule",
+            "addy": "0x45AEb0f1C5399A8D972055D57e1446ecE1f11B8C"
+          },
+          {
+            "name": "RevertFollowModule",
+            "addy": "0x447a073D1908F147b343E6Be00442F881Fc160F2"
+          }
+        ],
+        "act": [
+          {
+            "name": "CollectPublicationAction",
+            "addy": "0xcb51C006306E499dA0797E4eCA6A421a17AD80Ff"
+          }
+        ],
+        "collect": [
+          {
+            "name": "SimpleFeeCollectModule",
+            "addy": "0xea09BA6552ad178e7a35A16f81d15eEa1052AC09"
+          },
+          {
+            "name": "MultirecipientFeeCollectModule",
+            "addy": "0x96C9AA2c0411eC03e4C941a4A867cFC4EFf66bE8"
+          }
+        ],
+        "reference": [
+          {
+            "name": "DegreesOfSeparationReferenceModule",
+            "addy": "0x7160536d70CCb71452d3d32223fD7657395e60C3"
+          },
+          {
+            "name": "FollowerOnlyReferenceModule",
+            "addy": "0xF6ad8bAdc0c620A6C011ce6E8e24e249EC1aecDb"
+          }
+        ]
       }
     },
-    "TreasuryFee": "50",
-    "AnonymousProfileId": "3"
+    "TreasuryFee": 500,
+    "ProfileRoyaltyFee": 500,
+    "HandleRoyaltyFee": 500,
+    "AnonymousProfileId": "1",
+    "ModuleRegistryImpl": "0x5556D5D54356cF34a45835067495278b3e7D96d7",
+    "ModuleRegistry": "0x1a5085a7F47A33AE389A1f5a2c72d124F7140A9f",
+    "FollowNFT": "0x3A6c014579583c5D412A9F3914a67C0885dB90c0",
+    "LensHubImpl": "0x02D2c81A4911f41B36d768798257d0B6F812E360",
+    "LensHub": "0x5E692a98CE2ae22195cBC4c69Fc7A52FfAF8B270",
+    "LensHandlesImpl": "0xEf72F1b1f9818Ac4E1dc498C1A0DCc3945B780C1",
+    "LensHandles": "0xb851c97ECDe52E67C06ddd9a4E0f2ac37d1689f3",
+    "TokenHandleRegistryImpl": "0x2BBEA6BF9AEc0a8332d58D0C20c4BA36CFFFad70",
+    "TokenHandleRegistry": "0x144EA9a26F946011640217be7cc16Dde4DC7d783",
+    "PermissionlessCreator": "0x1Ab299f7C8f0D3C74Dc28f22c46f922F959499B3",
+    "CreditsFaucet": "0x157E6cc1e6aE795C6010Eea23EA0f19142EC65C1",
+    "ProfileCreationProxy": "0xa0d35fBF0F857A5b7fC2A86969e3DC864cb86941",
+    "CollectNFT": "0xaA2eE6eE572F5B5EA4c2Ec5BC91e302278e91AD3",
+    "LitAccessControlImpl": "0xaA2eE6eE572F5B5EA4c2Ec5BC91e302278e91AD3",
+    "LitAccessControl": "0xdA208101D190c96C0a9f34Ccb55f69F0C5EF5F93",
+    "PublicActProxy": "0xcb51C006306E499dA0797E4eCA6A421a17AD80Ff",
+    "Treasury": "0x18fc6b2a55949859DD23B2fa41C3460dd1b81165",
+    "GovernanceContract": "0x96C9AA2c0411eC03e4C941a4A867cFC4EFf66bE8",
+    "GovernanceContractAdmin": "0xe08c580CE82d7b35F698885F0B0c2E8f22c17FE8",
+    "ProxyAdminContract": "0x45AEb0f1C5399A8D972055D57e1446ecE1f11B8C",
+    "ProxyAdminContractAdmin": "0x8626f6940E2eb28930eFb4CeF49B2d1F2C9C1199"
+  },
+  "localnode": {
+    "testnet": true,
+    "chainId": 31337,
+    "network": "http://127.0.0.1:8545/",
+    "LensProfilesGuardianTimelock": 300,
+    "LensHandlesGuardianTimelock": 300,
+    "Currencies": [],
+    "Modules": {
+      "v1": {
+        "collect": [],
+        "follow": [],
+        "reference": []
+      },
+      "v2": {
+        "follow": [
+          {
+            "name": "FeeFollowModule",
+            "addy": "0xD03E6146978bB49C00f7DaA3869c6f5caB4424F8"
+          },
+          {
+            "name": "RevertFollowModule",
+            "addy": "0xc7bFC568C36e09bd2bb4BAA6BAa420B83fF9A1Cb"
+          }
+        ],
+        "act": [
+          {
+            "name": "CollectPublicationAction",
+            "addy": "0xC093CD994fCF0149DaDb7B30aada17A67184AB94"
+          }
+        ],
+        "collect": [
+          {
+            "name": "SimpleFeeCollectModule",
+            "addy": "0x40F6fa98a34Be5F4D0A09D2e3779e30719594FB5"
+          },
+          {
+            "name": "MultirecipientFeeCollectModule",
+            "addy": "0xbe5A7bf5084Fcfff74464d74B29e7EDD703c7418"
+          }
+        ],
+        "reference": [
+          {
+            "name": "DegreesOfSeparationReferenceModule",
+            "addy": "0xCf13A8643771d3B69661ecC3ACdE1Ece332e5C89"
+          },
+          {
+            "name": "FollowerOnlyReferenceModule",
+            "addy": "0xE19e7EED34d5113b9BD3EB3801cb1825e75448Fb"
+          }
+        ]
+      }
+    },
+    "TreasuryFee": 500,
+    "ProfileRoyaltyFee": 500,
+    "HandleRoyaltyFee": 500,
+    "AnonymousProfileId": "1",
+    "ModuleRegistryImpl": "0xbC70b51200505d57af2049EC57C4134D47aC438C",
+    "ModuleRegistry": "0x16F3A326d8E444518974128D93Be6211A1F51A62",
+    "FollowNFT": "0x5a2CcC9B76F6C3e879371e2f7Dec2F877a46CC42",
+    "LensHubImpl": "0xBAe05233deccD0697c9DE560dF38C4985d8E5f65",
+    "LensHub": "0x2613769528bfA84C1e78D7B2A46C07a6566251C1",
+    "LensHandlesImpl": "0x1bb86db5e6fD5fC6608209B6D2612EFe0AFBb74f",
+    "LensHandles": "0xd2E4BB171CAa40BEc8717Fa51c21E1B4e68219D1",
+    "TokenHandleRegistryImpl": "0xeCE50ae7CF2Bb7b7Ad09294489487d76b42A8dDb",
+    "TokenHandleRegistry": "0x58bf17fEDd2A8b2b8b36124cd48841c2D37f1565",
+    "PermissionlessCreator": "0xB83586216048943D37729A471653a02aa08e66A5",
+    "CreditsFaucet": "0x2929299Dfc9Ae2dE8657BB10855F1621f7B5402c",
+    "ProfileCreationProxy": "0x01DC14a3FCDA806DdE7C33F1B84A2B4EeBc12702",
+    "CollectNFT": "0x0BF1EEecb4C2f7e33164B1C827C1c5Ff806A653e",
+    "LitAccessControlImpl": "0x302De88f46b9f10F05c02070C932f1D23e35E75B",
+    "LitAccessControl": "0xaA8E8977fDfAf5CdEe45FBBaB40d45b0410A5d9f",
+    "PublicActProxy": "0x4Ef6e5dc57c0a687b2408e4dBb158EDF398A5465",
+    "Treasury": "0x18fc6b2a55949859DD23B2fa41C3460dd1b81165",
+    "GovernanceContract": "0x5F3364896f5c985d7F459ab4ed0CDeda7E0D65DB",
+    "GovernanceContractAdmin": "0xe08c580CE82d7b35F698885F0B0c2E8f22c17FE8",
+    "ProxyAdminContract": "0x99702bEa3bc84F044F27e7FD2878dB8ba4cf7e95",
+    "ProxyAdminContractAdmin": "0xdD2FD4581271e230360230F9337D5c0430Bf44C0"
   }
 }

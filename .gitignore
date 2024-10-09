@@ -35,6 +35,7 @@ docs/
 /broadcast/*/31337/
 /broadcast/**/dry-run/
 /broadcast/*/221122/
+/broadcast/*/11155111/
 
 contracts/core/modules/follow/SecretCodeFollowModule.sol
 
