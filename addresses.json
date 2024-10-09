@@ -251,7 +251,7 @@
   "local": {
     "testnet": true,
     "chainId": 221122,
-    "network": "https://l2-rpc-xs9qoe4v.nextnext.id",
+    "network": "",
     "LensProfilesGuardianTimelock": 300,
     "LensHandlesGuardianTimelock": 300,
     "Currencies": [],
@@ -339,7 +339,7 @@
   "sepolia": {
     "testnet": true,
     "chainId": 11155111,
-    "network": "https://eth-sepolia.g.alchemy.com/v2/jHXQcLUXcl8dF1kkt3azfvgD3kMt3Wke",
+    "network": "",
     "LensProfilesGuardianTimelock": 300,
     "LensHandlesGuardianTimelock": 300,
     "Currencies": [],
